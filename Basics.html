@@ -1,0 +1,130 @@
+<!-- This is an HTML comment - this is not displayed on the page; we can use this as notes for ourself or others -->
+<!-- This line tells the browser that this is an HTML 5 webpage, so the browser knows what to expect --> 
+<!DOCTYPE html>
+<!-- the html tag follows the docty[e tage and hold the page content; lang=en helps the browser and accessibility programs know the language the webpage was written in] -->
+<html lang="en">
+<!-- head section has configuration information primarily for the browser and search engines -->
+    <head>
+        <!-- This tells the browser that pretty much any character from any language may be on our webpage -->
+        <meta charset="UTF-8">
+        <!-- this is the first step in responsive design; this helps render properly on a mobile device -->
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <!-- The text between the title tags is what appears in the browser tab -->
+         <title>HTML Basics</title>
+
+         <!-- link to external CSS file - this is best practice -->
+          <link rel="stylesheet" href="Default.css">
+          
+        <!-- this is where we store our embedded CSS styles -->
+         <style>
+         
+
+            /* this will apply to all paragraph - p - tags on the page */
+            p{
+                color: rgb(124, 233, 73);
+            }
+            h1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(131, 248, 84);
+            }
+         </style>   
+    <!-- this is the closing head tag -->
+    </head>
+
+    <!-- The body section is where the contect goes- text, images, videos -->
+     <body>
+        <!-- header section is a sematic tag that helps oraganize our content and is typically at the top of the page
+         can have logo, menu, page title -->
+        <header>
+        <!-- h1 is the top level heading tag; by default the text is larger and bold; 
+         there should be 1 and only 1 h1 tag on the page-->
+            <h1>CS014 Basic HTML</h1>
+    
+        </header>
+    
+        <!-- Main has the core content  -->
+        <main>
+            <!-- this is the paragraph tab by default it offers spacing around the text -->
+            <p>
+                HTML stands for Hypertext Markup Language. HTML provides structure of the page by marking up 
+                the text. You can use a variety of HTML tags to structure and organize a webpage. 
+                HTML does not really have any rules, but there are best practices that should be used when building 
+                the webpage.
+            </p>
+
+            <!-- Subheding for history of HTML; h2 is 2nd level heading, by default is bold and smaller than h1-->
+            <h2> History of HTML </h2>
+
+            <!-- create and unordered list to show the dates of HTML versions with bullet points -->
+            <ul>
+                <!-- li is the list item - each item in the list should be in its own li tags -->                
+                <li> HTML 1.0 - developed in the early 1990's </li>
+                <li> HTML 2.0 released in 1995</li>
+                <li> HTML 3.2 - released in 1997</li>
+                <li>HTML 4.0 - released in 1999</li>
+                <li>HTML 5 - current version released in 2014 - living standard</li>
+            </ul>
+            <!-- Images are displayed using the img tag
+             src - the file name - use relative paths, such as ./images/
+             the-image- file name-image-extension-->
+            <img src="./small photo for HW.jpg" alt="HTML versus css comparison">
+            
+            <!-- Jump into CSS introductions -->
+            <h2>Cascading Stle Sheets</h2>
+
+            <p>CSS is a language that is used to make HTML look better. 
+                CSS can control the layouts, colors, fonts, basically any visual element on the webpage can be 
+                changed from the default with CSS</p>
+
+                <!-- h3 is the 3rd level heading, a little bit smaller than h2 -->
+                <h1>History of CSS</h1>
+
+                <ul>
+                    <li>CSS1 released in 1996</li>
+                    <li> CSS2 was released in 1998</li>
+                    <li>CSS3 - current version - released in 2011- living standard</li>
+                </ul>
+
+                <h3>Basic structure</h3>
+
+                <!-- pre tags leave the content insdie alone - the browser will not move the 
+                 content onto the same line, etc.  -->
+                <pre>
+    Selector{
+        Preperty; value; 
+    }                
+
+                </pre>
+
+                <h4 id="h4CSSsel">CSS Selectors</h4>
+                <ul>
+                    <li>HTML eletment</li> 
+                    <li>id of an HTML element - #id</li> 
+                    <li>Custom class - .classname</li>
+                </ul>
+                <!-- Inline style - use the style tag and then set property: value;
+                 use inline styles for testing; it is much better to use embedded or
+                 external CSS styles from a maintenance perspective-->
+                <h4 style="color:turquoise; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">3 Ways to create CSS</h4>
+
+                <ul>
+                    <li style="color: blueviolet; font-family: 'Times New Roman', Times, serif;">External - a seperate CSS file - example, main.css</li>
+                    <li style="color: hotpink;">Embedded- style tags in the head section</li>
+                    <li>Inline - we set up css on individual HTML elements</li>
+                </ul>
+
+
+            <!-- div is division of content -->
+
+            <div> </div>
+        </main>
+    
+        <!-- footer is a semetic tag that helps organize our content and typically at the bottom of the page -->
+            <footer>
+
+            </footer> 
+    <!-- this is the closing body tag, should be the next to the last tag on the page -->
+     </body>
+<!-- this closing html tag is the last line of our webpage  -->
+</html>
+
