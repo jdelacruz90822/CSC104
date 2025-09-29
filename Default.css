@@ -1,16 +1,14 @@
 /* start out with global styles, and then get more specific */
 body{
     /* 3 ways to set up colors- named colors "red" or green, rgb - red/green/ blue combinations, hex values - combo of letters and numbers that magically relate to colors */
-     background-color: rgb(109, 109, 228);
+     background-color: rgb(180, 240, 245);
     /* change the text color to something lighter */
-    color: antiquewhite;
+    color: rgb(77, 69, 58);
     /* change the font for the whole page, unless a more specific change is made 
     on and element */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        
-
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h2{
-    color: aquamarine;
+    color: rgb(77, 69, 58);
 }
