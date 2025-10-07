@@ -1,0 +1,96 @@
+
+/* body styles will apply to the whole page - this refers to the HTML
+body element*/
+body{
+    /* if you want to use a background image, you will need to set the url to the 
+    path of the image */
+    background-image: url('./planet3.jpg');
+    background-size: 90%;
+    background-position: center;
+
+    /* reset styles - take away any browser defaults; we will customize our 
+    own spacing */
+    margin: 0;
+    padding: 0;
+    /* fonts with multiwords need to be surrounded by '' but single word fonts
+    do not need '' */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+
+
+}
+
+header{
+    /* rgba lets you set a transparent bg - the 4th value is from 0 to 1;
+        0 is entirely see throu, 1 is entirely so;lid */
+    background-color: rgb(128, 255, 212, .5);
+    /* space around the text */
+    padding: 10px;
+    /* space outside of the red background area  */
+    margin: 10px;
+    /* rounded corners */
+    border-radius: 8px;
+    /* to center text; if this doesn't center your text, you may need
+    to add this to the parent/container element */
+    text-align: center;
+}
+/* the parent/container for our flex layout */
+.flex-container{
+    /* enable the flex layout for our outer space layout */
+    display: flex;
+
+    /* evenly arrange the items */
+    justify-content: space-between;
+
+    /* by default our colums will be place horizontally across the screen*/
+    flex-direction: row;
+
+    margin: 20px;
+
+}
+.column{
+    background-color: rgba(173, 216, 230, .5);
+    flex: 0.2;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.column + .column{
+    margin-left: 5px;
+}
+
+
+/* this is a custom CSS class that we will use to resize our images */
+.img-mars{
+width:95%;
+max-width: 400px;
+height: 500px;
+/* this allows the images to resize nicely */
+object-fit: cover;
+border-radius: 10px;
+}
+/* # is where you have a style that relates to the ID of an element */
+#pageHeader{
+color: rgb(28, 52, 54);
+}
+
+@media (max-width: 800px){
+
+}
+.flex-container{
+    /* change the direction to column so my image details will stack */
+    flex-direction: column; 
+}
+
+.column + .column{
+    /* setting the margin to 0 - you do not need to specify the unit of 
+    measurement- percentage, pixel, etc.*/
+    margin-left: 0;
+
+    margin-top: 20px;
+    align-items: center;
+    margin-right: 20px;
+    padding: 5px;
+}
